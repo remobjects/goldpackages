@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{2CD773AE-556E-4649-931C-52527015D2E6}</ProjectGuid>
+    <BinaryName>github.com.remyoudompheng.bigfft</BinaryName>
+    <Mode>Echoes</Mode>
+    <OutputType>StaticLibrary</OutputType>
+    <DefineConstants>math_big_pure_go</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="#" />
+    <Reference Include="Go" />
+    <Compile Include="github.com.remyoudompheng.bigfft\arith.go" />
+    <Compile Include="github.com.remyoudompheng.bigfft\arith_decl_pure.go" />
+    <Compile Include="github.com.remyoudompheng.bigfft\fermat.go" />
+    <Compile Include="github.com.remyoudompheng.bigfft\fft.go" />
+    <Compile Include="github.com.remyoudompheng.bigfft\scan.go" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.targets" />
+</Project>
