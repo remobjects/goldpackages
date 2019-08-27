@@ -1,0 +1,4 @@
+﻿{
+    "ConditionalDefines" : [ "math_big_pure_go" ],
+    "Excludes": [ "arith_decl.go" ]
+}
